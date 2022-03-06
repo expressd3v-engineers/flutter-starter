@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'auth/index.dart';
 
 void main() {
   runApp(const App());
@@ -13,7 +14,8 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Starter Application',
       theme: ThemeData(primarySwatch: Colors.blue),
-      routes: ,
+      initialRoute: '/',
+      home: const LoginPage(title: "Login Page")
     );
   }
 }
