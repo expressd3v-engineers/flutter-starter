@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'auth/index.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_starter/routes.gr.dart';
+import 'package:flutter_starter/global_bloc/index.dart';
 
-void main() {
-  runApp(const App());
-}
+void main () => runApp(const App());
+
 
 class App extends StatelessWidget {
 
@@ -11,11 +12,16 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Starter Application',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      initialRoute: '/',
-      home: const LoginPage(title: "Login Page")
-    );
+
+    final _appRouter = AppRouter();
+
+    return BlocProvider<SettingsBloc>(
+        create: (_) => SettingsBloc(),
+        child: MaterialApp.router(
+            debugShowCheckedModeBanner: true,
+            routerDelegate: _appRouter.delegate(),
+            routeInformationParser: _appRouter.defaultRouteParser(),
+            title: 'Flutter Starter Application',
+            theme: ThemeData(primarySwatch: Colors.blue)));
   }
 }

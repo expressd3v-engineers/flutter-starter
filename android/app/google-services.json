@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "373325101141",
+    "firebase_url": "https://whitesnow-0321.firebaseio.com",
+    "project_id": "whitesnow-0321",
+    "storage_bucket": "whitesnow-0321.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373325101141:android:586637d7c50ef0f740fcdc",
+        "android_client_info": {
+          "package_name": "com.example.flutter_starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373325101141-torbr9ttvut9j9q238ah50j28pdlhajq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1NnL9jQ8-ivXzjfjfTMWb_wVEGAjhpbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373325101141-torbr9ttvut9j9q238ah50j28pdlhajq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

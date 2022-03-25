@@ -5,6 +5,8 @@ class UserModel {
   String? avatar;
   String? firstname;
   String? lastname;
+  String? email;
+  String? phone;
 
   /// As its name is saying, this constructor makes class object from json string.
   UserModel.fromJson(String json) {
@@ -13,6 +15,8 @@ class UserModel {
     avatar = data['avatar'];
     firstname = data['firstname'];
     lastname = data['lastname'];
+    email = data['email'];
+    phone = data['phone'];
   }
 
   /// As its name is saying, it converts user model to json string.
@@ -22,7 +26,9 @@ class UserModel {
       "id": id,
       "avatar": avatar,
       "firstname": firstname,
-      "lastname": lastname
+      "lastname": lastname,
+      "email": email,
+      "phone": phone
     };
 
     return jsonEncode(data);
